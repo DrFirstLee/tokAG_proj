@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Token-Based Affordance Grounding with Large Vision-Language Models">
+  <meta name="description" content="Token-Based Affordance Grounding with Large Vision-Language Models">
   <meta name="keywords" content="TokAG, Affordance Grounding, Vision-Language Models, Zero-Shot Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Token-Based Affordance Grounding with Large Vision-Language Models</title>
@@ -22,15 +22,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -39,242 +37,265 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
-  <script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 </head>
+
 <body>
 
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Token-Based Affordance Grounding with Large Vision-Language Models</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">ECCV 2026</span>
-          </div>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://drfirstlee.github.io/" target="_blank">Seung Il Lee</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://chelsielei.github.io/" target="_blank">Qinqian Lei</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://daguangxu.net/" target="_blank">Daguang Xu</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=PHvliUgAAAAJ&hl=en" target="_blank">Dong Yang</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://tanrobby.github.io/" target="_blank">Robby T. Tan</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://olemiss.edu/profiles/yixin" target="_blank">Yixin Chen</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://hawkrsrch.github.io/" target="_blank">Bo Wang</a><sup>1</sup>
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Mississippi,</span>
-            <span class="author-block"><sup>2</sup>National University of Singapore,</span>
-            <span class="author-block"><sup>3</sup>NVIDIA</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/{TODO}"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
+            <h1 class="title is-1 publication-title">Token-Based Affordance Grounding with Large Vision-Language Models
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">ECCV 2026</span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://drfirstlee.github.io/" target="_blank">Seung Il Lee</a><sup>1</sup>,
               </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/DrFirstLee/tokAG"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
+              <span class="author-block">
+                <a href="https://chelsielei.github.io/" target="_blank">Qinqian Lei</a><sup>2</sup>,
               </span>
-
+              <span class="author-block">
+                <a href="https://daguangxu.net/" target="_blank">Daguang Xu</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=PHvliUgAAAAJ&hl=en" target="_blank">Dong
+                  Yang</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://tanrobby.github.io/" target="_blank">Robby T. Tan</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://olemiss.edu/profiles/yixin" target="_blank">Yixin Chen</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://hawkrsrch.github.io/" target="_blank">Bo Wang</a><sup>1</sup>
+              </span>
             </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>University of Mississippi,</span>
+              <span class="author-block"><sup>2</sup>National University of Singapore,</span>
+              <span class="author-block"><sup>3</sup>NVIDIA</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2607.03595" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/DrFirstLee/tokAG"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="content has-text-centered">
-      <img src="./imgs/teaser.jpg" alt="TokAG localizes action-relevant regions using token-level LVLM signals" style="width:60%; max-width:800px; margin-bottom: 30px;">
-    </div>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">TokAG </span> transforms token-level semantic-spatial signals from LVLMs into zero-shot affordance heatmaps for action-specific localization.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-Affordance grounding aims to localize image regions that support a specific action, serving as a core capability for physical intelligence and embodied perception. Previous studies have primarily relied on weakly supervised learning with action labels from exocentric images. However, these methods often struggle with visually ambiguous exocentric images containing co-occurring actions; moreover, they fail to distinguish semantically similar actions because existing methods typically rely on brief action phrases that lack rich semantic details for action-specific localization. Although large vision-language models (LVLMs) encode rich action semantics and their action-conditioned textual outputs implicitly contain spatial cues, they do not directly provide action-specific spatial localization. To address these problems, we propose TokAG, a zero-shot affordance grounding framework that exploits the token-level semantic-spatial signals in LVLMs to localize action-relevant regions without external supervision. We observe that attention maps associated with different LVLM output tokens vary significantly, with many attending to irrelevant regions such as the background. Thus, we introduce a spatial-aware token-selection mechanism to systematically evaluate each output token and select the one whose attention maps exhibit dominant activation over the target object, instead of relying on arbitrary attention maps. By extracting these object-focused attention maps, we transform the LVLM’s implicit semantic signals into zero-shot affordance heatmaps. Our zero-shot framework consistently outperforms prior weakly supervised approaches across multiple benchmarks, improving NSS by 10.7% on the unseen split of AGD20K and by 29.7% on HICO-IIF. The code and models will be made publicly available.
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="content has-text-centered">
+          <img src="./imgs/teaser.jpg" alt="TokAG localizes action-relevant regions using token-level LVLM signals"
+            style="width:60%; max-width:800px; margin-bottom: 30px;">
         </div>
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">TokAG </span> transforms token-level semantic-spatial signals from LVLMs into zero-shot
+          affordance heatmaps for action-specific localization.
+        </h2>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </section>
 
-  </div>
-</section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Pipeline -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Pipeline</h2>
-        <div class="content has-text-justified">
-           <p>
-           Overview of our proposed pipeline.
-          </p>
-           <div class="content has-text-centered">
-        <img src="./imgs/pipeline.jpg" alt="Framework overview" style="width:100%; max-width:800px; margin-bottom: 30px;">
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            Affordance grounding aims to localize image regions that support a specific action, serving as a core
+            capability for physical intelligence and embodied perception. Previous studies have primarily relied on
+            weakly supervised learning with action labels from exocentric images. However, these methods often struggle
+            with visually ambiguous exocentric images containing co-occurring actions; moreover, they fail to
+            distinguish semantically similar actions because existing methods typically rely on brief action phrases
+            that lack rich semantic details for action-specific localization. Although large vision-language models
+            (LVLMs) encode rich action semantics and their action-conditioned textual outputs implicitly contain spatial
+            cues, they do not directly provide action-specific spatial localization. To address these problems, we
+            propose TokAG, a zero-shot affordance grounding framework that exploits the token-level semantic-spatial
+            signals in LVLMs to localize action-relevant regions without external supervision. We observe that attention
+            maps associated with different LVLM output tokens vary significantly, with many attending to irrelevant
+            regions such as the background. Thus, we introduce a spatial-aware token-selection mechanism to
+            systematically evaluate each output token and select the one whose attention maps exhibit dominant
+            activation over the target object, instead of relying on arbitrary attention maps. By extracting these
+            object-focused attention maps, we transform the LVLM’s implicit semantic signals into zero-shot affordance
+            heatmaps. Our zero-shot framework consistently outperforms prior weakly supervised approaches across
+            multiple benchmarks, improving NSS by 10.7% on the unseen split of AGD20K and by 29.7% on HICO-IIF. The code
+            and models will be made publicly available.
+          </div>
         </div>
-          <p>
-            Given an egocentric image and an action text prompt, TokAG extracts output tokens
-            \(\{t_1, t_2, \ldots, t_N\}\) from the language layers of a frozen LVLM. For each
-            token \(t_i\), token-to-image attention maps are aggregated across all selected layers
-            \(\mathcal{L}\) and attention heads \(\mathcal{H}\):
-            \[
+      </div>
+      <!--/ Abstract. -->
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Pipeline -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Pipeline</h2>
+          <div class="content has-text-justified">
+            <p>
+              Overview of our proposed pipeline.
+            </p>
+            <div class="content has-text-centered">
+              <img src="./imgs/pipeline.jpg" alt="Framework overview"
+                style="width:100%; max-width:800px; margin-bottom: 30px;">
+            </div>
+            <p>
+              Given an egocentric image and an action text prompt, TokAG extracts output tokens
+              \(\{t_1, t_2, \ldots, t_N\}\) from the language layers of a frozen LVLM. For each
+              token \(t_i\), token-to-image attention maps are aggregated across all selected layers
+              \(\mathcal{L}\) and attention heads \(\mathcal{H}\):
+              \[
               A_i = \frac{1}{|\mathcal{L}||\mathcal{H}|}
               \sum_{l \in \mathcal{L}} \sum_{h \in \mathcal{H}} A_{i}^{l,h}.
-            \]
-            Using object masks \(M_k\) generated by CLIPSeg, TokAG computes an object-region
-            attention score for each token by measuring how strongly its attention falls inside
-            the target object regions:
-            \[
+              \]
+              Using object masks \(M_k\) generated by CLIPSeg, TokAG computes an object-region
+              attention score for each token by measuring how strongly its attention falls inside
+              the target object regions:
+              \[
               s_i = \sum_k \frac{\sum_{p} A_i(p) M_k(p)}{\sum_{p} M_k(p)}.
-            \]
-            The token with the highest score is selected,
-            \(t^* = \arg\max_i s_i\), and its object-region attention heatmap becomes the final
-            affordance grounding prediction.
-          </p>
+              \]
+              The token with the highest score is selected,
+              \(t^* = \arg\max_i s_i\), and its object-region attention heatmap becomes the final
+              affordance grounding prediction.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!--/ Pipeline -->
+
+    </div>
+  </section>
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+
+      <!-- Experiments -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Qualitative and Quantitative Results</h2>
+
+          <!-- Interpolating. -->
+          <h3 class="title is-4">Qualitative Results</h3>
+          <div class="content has-text-justified">
+            <p>
+              Here are some qualitative results.
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img src="./imgs/vis_result_main.jpg" alt="Qualitative Results"
+              style="width:100%; max-width:800px; margin-bottom: 30px;">
+          </div>
+          <br />
+          <!--/ Interpolating. -->
+
+          <!-- Re-rendering. -->
+          <h3 class="title is-4">Quantitative Results</h3>
+          <div class="content has-text-justified">
+            <p>
+              Here are the experiment results in zero-shot affordance grounding.
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img src="./imgs/quantitative_results.jpg" alt="Quantitative Results"
+              style="width:80%; max-width:800px; margin-bottom: 30px;">
+          </div>
+          <!--/ Re-rendering. -->
 
         </div>
       </div>
+      <!--/ Experiments -->
+
     </div>
-    <!--/ Pipeline -->
-
-  </div>
-</section>
-  
-
-  
-<section class="section">
-  <div class="container is-max-desktop">
-
-   
-    <!-- Experiments -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Qualitative and Quantitative Results</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Qualitative Results</h3>
-        <div class="content has-text-justified">
-          <p>
-            Here are some qualitative results.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-        <img src="./imgs/vis_result_main.jpg" alt="Qualitative Results" style="width:100%; max-width:800px; margin-bottom: 30px;">
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Quantitative Results</h3>
-        <div class="content has-text-justified">
-          <p>
-            Here are the experiment results in zero-shot affordance grounding.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <img src="./imgs/quantitative_results.jpg" alt="Quantitative Results" style="width:80%; max-width:800px; margin-bottom: 30px;">
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Experiments -->
-
-  </div>
-</section>
+  </section>
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{lee2026tokag,
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{lee2026tokag,
   title     = {Token-Based Affordance Grounding with Large Vision-Language Models},
   author    = {Lee, Seung il and Lei, Qinqian and Xu, Daguang and Yang, Dong and Tan, Robby T. and Chen, Yixin and Wang, Bo},
   booktitle = {In Proceedings of the European Conference on Computer Vision (ECCV)},
   year      = {2026}
 }</code></pre>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="https://arxiv.org/abs/{TODO}">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/DrFirstLee/tokAG" class="external-link">
-        <i class="fab fa-github"></i>
-      </a>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/DrFirstLee/tokAG">source code</a> of this website,
-            adapted from the original project page template.
-          </p>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://arxiv.org/abs/2607.03595">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/DrFirstLee/tokAG" class="external-link">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/DrFirstLee/tokAG">source code</a> of
+              this website,
+              adapted from the original project page template.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
